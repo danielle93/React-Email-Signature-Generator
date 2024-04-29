@@ -26,7 +26,7 @@ function GeneratedSignature({
       cellSpacing="0"
       cellPadding="0"
       border="0"
-      width="390"
+      width="500"
       style={{ height: "10px" }}
       borderCollapse="collapse"
     >
@@ -132,227 +132,237 @@ function GeneratedSignature({
         </tr>
 
         <tr style={{ display: phoneNumber ? "block" : "none" }}>
-          <table
-            cellSpacing="0"
-            cellPadding="0"
-            border="1"
-            height="10"
-            style={{ height: "10px" }}
-            borderCollapse="collapse"
-          >
-            <tr>
-              <td width="14">
-                <img
+          <td>
+            <table
+              cellSpacing="0"
+              cellPadding="0"
+              border="1"
+              height="10"
+              style={{ height: "10px" }}
+              borderCollapse="collapse"
+            >
+              <tr>
+                <td width="14">
+                  <img
+                    style={{
+                      display: "block",
+                    }}
+                    src={cellIcon}
+                    alt="Cell Phone Icon"
+                    width="14"
+                  />
+                </td>
+                <td
+                  width="300"
                   style={{
-                    display: "block",
-                  }}
-                  src={cellIcon}
-                  alt="Cell Phone Icon"
-                  width="14"
-                />
-              </td>
-              <td
-                width="300"
-                style={{
-                  fontFamily: "'Helvetica', 'Arial', sans-serif",
-                  color: "#7088ad",
-                  fontSize: "14px",
-                  fontWeight: "normal",
-                }}
-              >
-                &nbsp;&nbsp;
-                <a
-                  style={{
-                    display: "inline-block",
-                    textDecoration: "underline",
+                    fontFamily: "'Helvetica', 'Arial', sans-serif",
                     color: "#7088ad",
+                    fontSize: "14px",
+                    fontWeight: "normal",
                   }}
-                  href={`tel:${phoneNumber}`}
                 >
-                  <font face="'Helvetica', 'Arial', sans-serif">
-                    {phoneNumber}
-                  </font>
-                </a>
-              </td>
-            </tr>
-          </table>
+                  &nbsp;&nbsp;
+                  <a
+                    style={{
+                      display: "inline-block",
+                      textDecoration: "underline",
+                      color: "#7088ad",
+                    }}
+                    href={`tel:${phoneNumber}`}
+                  >
+                    <font face="'Helvetica', 'Arial', sans-serif">
+                      {phoneNumber}
+                    </font>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
         <tr style={{ display: deskNumber ? "block" : "none" }}>
-          <table
-            cellSpacing="0"
-            cellPadding="0"
-            border="1"
-            height="10"
-            style={{ height: "10px" }}
-            borderCollapse="collapse"
-          >
-            <tr>
-              <td width="14">
-                <img
+          <td>
+            <table
+              cellSpacing="0"
+              cellPadding="0"
+              border="1"
+              height="10"
+              style={{ height: "10px" }}
+              borderCollapse="collapse"
+            >
+              <tr>
+                <td width="14">
+                  <img
+                    style={{
+                      display: "block",
+                    }}
+                    src={deskIcon}
+                    alt="Desk Phone Icon"
+                    width="14"
+                  />
+                </td>
+                <td
+                  width="300"
                   style={{
-                    display: "block",
-                  }}
-                  src={deskIcon}
-                  alt="Desk Phone Icon"
-                  width="14"
-                />
-              </td>
-              <td
-                width="300"
-                style={{
-                  fontFamily: "'Helvetica', 'Arial', sans-serif",
-                  color: "#7088ad",
-                  fontSize: "14px",
-                  fontWeight: "normal",
-                }}
-              >
-                &nbsp;&nbsp;
-                <a
-                  style={{
-                    display: "inline-block",
-                    textDecoration: "underline",
+                    fontFamily: "'Helvetica', 'Arial', sans-serif",
                     color: "#7088ad",
+                    fontSize: "14px",
+                    fontWeight: "normal",
                   }}
-                  href={`tel:${deskNumber}`}
                 >
-                  <font face="'Helvetica', 'Arial', sans-serif">
-                    {deskNumber}
-                  </font>
-                </a>
-              </td>
-            </tr>
-          </table>
+                  &nbsp;&nbsp;
+                  <a
+                    style={{
+                      display: "inline-block",
+                      textDecoration: "underline",
+                      color: "#7088ad",
+                    }}
+                    href={`tel:${deskNumber}`}
+                  >
+                    <font face="'Helvetica', 'Arial', sans-serif">
+                      {deskNumber}
+                    </font>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
         <tr style={{ display: faxNumber ? "block" : "none" }}>
-          <table
-            cellSpacing="0"
-            cellPadding="0"
-            border="1"
-            height="10"
-            style={{ height: "10px" }}
-            borderCollapse="collapse"
-          >
-            <tr>
-              <td width="14">
-                <img
+          <td>
+            <table
+              cellSpacing="0"
+              cellPadding="0"
+              border="1"
+              height="10"
+              style={{ height: "10px" }}
+              borderCollapse="collapse"
+            >
+              <tr>
+                <td width="14">
+                  <img
+                    style={{
+                      display: "block",
+                    }}
+                    src={faxIcon}
+                    alt="Fax Icon"
+                    width="14"
+                  />
+                </td>
+                <td
+                  width="300"
                   style={{
-                    display: "block",
-                  }}
-                  src={faxIcon}
-                  alt="Fax Icon"
-                  width="14"
-                />
-              </td>
-              <td
-                width="300"
-                style={{
-                  fontFamily: "'Helvetica', 'Arial', sans-serif",
-                  color: "#7088ad",
-                  fontSize: "14px",
-                  fontWeight: "normal",
-                }}
-              >
-                &nbsp;&nbsp;
-                <a
-                  style={{
-                    display: "inline-block",
-                    textDecoration: "underline",
+                    fontFamily: "'Helvetica', 'Arial', sans-serif",
                     color: "#7088ad",
+                    fontSize: "14px",
+                    fontWeight: "normal",
                   }}
-                  href={`tel:${faxNumber}`}
                 >
-                  <font face="'Helvetica', 'Arial', sans-serif">
-                    {faxNumber}
-                  </font>
-                </a>
-              </td>
-            </tr>
-          </table>
+                  &nbsp;&nbsp;
+                  <a
+                    style={{
+                      display: "inline-block",
+                      textDecoration: "underline",
+                      color: "#7088ad",
+                    }}
+                    href={`tel:${faxNumber}`}
+                  >
+                    <font face="'Helvetica', 'Arial', sans-serif">
+                      {faxNumber}
+                    </font>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
         <tr>
-          <table
-            cellSpacing="0"
-            cellPadding="0"
-            border="1"
-            height="10"
-            style={{ height: "10px" }}
-            borderCollapse="collapse"
-          >
-            <tr>
-              <td width="14">
-                <img
+          <td>
+            <table
+              cellSpacing="0"
+              cellPadding="0"
+              border="1"
+              height="10"
+              style={{ height: "10px" }}
+              borderCollapse="collapse"
+            >
+              <tr>
+                <td width="14">
+                  <img
+                    style={{
+                      display: "block",
+                    }}
+                    src={emailIcon}
+                    alt="Email Address Icon"
+                    width="14"
+                  />
+                </td>
+                <td
+                  width="300"
                   style={{
-                    display: "block",
-                  }}
-                  src={emailIcon}
-                  alt="Email Address Icon"
-                  width="14"
-                />
-              </td>
-              <td
-                width="300"
-                style={{
-                  fontFamily: "'Helvetica', 'Arial', sans-serif",
-                  color: "#7088ad",
-                  fontSize: "14px",
-                  fontWeight: "normal",
-                }}
-              >
-                &nbsp;&nbsp;
-                <a
-                  style={{
-                    display: "inline-block",
-                    textDecoration: "underline",
+                    fontFamily: "'Helvetica', 'Arial', sans-serif",
                     color: "#7088ad",
+                    fontSize: "14px",
+                    fontWeight: "normal",
                   }}
-                  href={`tel:${emailAddress}`}
                 >
-                  <font face="'Helvetica', 'Arial', sans-serif">
-                    {emailAddress}
-                  </font>
-                </a>
-              </td>
-            </tr>
-          </table>
+                  &nbsp;&nbsp;
+                  <a
+                    style={{
+                      display: "inline-block",
+                      textDecoration: "underline",
+                      color: "#7088ad",
+                    }}
+                    href={`mailto:${emailAddress}`}
+                  >
+                    <font face="'Helvetica', 'Arial', sans-serif">
+                      {emailAddress}
+                    </font>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
 
         <tr>
-          <table
-            cellSpacing="0"
-            cellPadding="0"
-            border="1"
-            height="10"
-            style={{ height: "10px" }}
-            borderCollapse="collapse"
-          >
-            <tr>
-              <td width="14">
-                <img
+          <td>
+            <table
+              cellSpacing="0"
+              cellPadding="0"
+              border="1"
+              height="10"
+              style={{ height: "10px" }}
+              borderCollapse="collapse"
+            >
+              <tr>
+                <td width="14">
+                  <img
+                    style={{
+                      display: "block",
+                    }}
+                    src={locationIcon}
+                    alt="Address Icon"
+                    width="14"
+                  />
+                </td>
+                <td
+                  width="300"
                   style={{
-                    display: "block",
+                    fontFamily: "'Helvetica', 'Arial', sans-serif",
+                    color: "#7088ad",
+                    fontSize: "14px",
+                    fontWeight: "normal",
                   }}
-                  src={locationIcon}
-                  alt="Address Icon"
-                  width="14"
-                />
-              </td>
-              <td
-                width="300"
-                style={{
-                  fontFamily: "'Helvetica', 'Arial', sans-serif",
-                  color: "#7088ad",
-                  fontSize: "14px",
-                  fontWeight: "normal",
-                }}
-              >
-                &nbsp;&nbsp;
-                <font face="'Helvetica', 'Arial', sans-serif">
-                  100<span style={{ display: "none" }}>-</span> Lexington
-                  <span style={{ display: "none" }}>-</span> Street, Suite 400
-                </font>
-              </td>
-            </tr>
-          </table>
+                >
+                  &nbsp;&nbsp;
+                  <font face="'Helvetica', 'Arial', sans-serif">
+                    100<span style={{ display: "none" }}>-</span> Lexington
+                    <span style={{ display: "none" }}>-</span> Street, Suite 400
+                  </font>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
         <tr>
           <td
@@ -376,50 +386,52 @@ function GeneratedSignature({
           <td height="6"></td>
         </tr>
         <tr>
-          <table
-            cellSpacing="0"
-            cellPadding="0"
-            border="1"
-            height="10"
-            style={{ height: "10px" }}
-            borderCollapse="collapse"
-          >
-            <tr>
-              <td width="14">
-                <img
+          <td>
+            <table
+              cellSpacing="0"
+              cellPadding="0"
+              border="1"
+              height="10"
+              style={{ height: "10px" }}
+              borderCollapse="collapse"
+            >
+              <tr>
+                <td width="14">
+                  <img
+                    style={{
+                      display: "block",
+                    }}
+                    src={websiteIcon}
+                    alt="Website Link Icon"
+                    width="14"
+                  />
+                </td>
+                <td
+                  width="300"
                   style={{
-                    display: "block",
+                    fontFamily: "'Helvetica', 'Arial', sans-serif",
+                    color: "#7088ad",
+                    fontSize: "14px",
+                    fontWeight: "normal",
                   }}
-                  src={websiteIcon}
-                  alt="Website Link Icon"
-                  width="14"
-                />
-              </td>
-              <td
-                width="300"
-                style={{
-                  fontFamily: "'Helvetica', 'Arial', sans-serif",
-                  color: "#7088ad",
-                  fontSize: "14px",
-                  fontWeight: "normal",
-                }}
-              >
-                &nbsp;&nbsp;
-                <a
-                  style={{
-                    display: "inline-block",
-                    textDecoration: "underline",
-                    color: "#00A7C9",
-                  }}
-                  href="https://urgomedical.us"
                 >
-                  <font face="'Helvetica', 'Arial', sans-serif">
-                    urgomedical.us
-                  </font>
-                </a>
-              </td>
-            </tr>
-          </table>
+                  &nbsp;&nbsp;
+                  <a
+                    style={{
+                      display: "inline-block",
+                      textDecoration: "underline",
+                      color: "#00A7C9",
+                    }}
+                    href="https://urgomedical.us"
+                  >
+                    <font face="'Helvetica', 'Arial', sans-serif">
+                      urgomedical.us
+                    </font>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
         </tr>
       </tbody>
     </table>

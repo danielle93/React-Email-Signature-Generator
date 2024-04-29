@@ -283,7 +283,7 @@ function EmailSignatureForm() {
                 <div className="col-12 col@md">
                   <Fade top cascade>
                     <div
-                      className="tableContainer padding-lg padding-xl@md height-100%"
+                      className="tableContainer padding-md padding-xl@md height-100%"
                       style={{
                         background: "#EFF9FB",
                         borderRadius: "30px",
@@ -308,7 +308,66 @@ function EmailSignatureForm() {
                   </Fade>
                 </div>
 
-                <div className="col-12 col@md">
+                <div className="col-12 col@md block hide@md">
+                  <div
+                    className="padding-lg"
+                    style={{
+                      borderRadius: "30px",
+                      background: "#EFF9FB",
+                      color: "#003865",
+                    }}
+                  >
+                    <h2 className="text-md font-secondary margin-bottom-sm">
+                      Mobile Instructions:
+                    </h2>
+                    <ul className="font-primary instructions">
+                      <li className="text-sm text-base@md">
+                        Click Copy to Clipboard
+                      </li>
+                      <li className="text-sm text-base@md">
+                        Open the Outlook mobile app
+                      </li>
+                      <li className="text-sm text-base@md">
+                        Tap your account image in the top left corner
+                      </li>
+                      <li className="text-sm text-base@md">
+                        Tap the gear icon at the bottom left to open Outlook
+                        settings
+                      </li>
+                      <li className="text-sm text-base@md">
+                        Tap Signature to open the signature settings.
+                      </li>
+                      <li className="text-sm text-base@md">
+                        Delete all the content and paste your email signature
+                        &gt; Save
+                      </li>
+                      <li className="text-sm text-base@md">
+                        Hit the checkmark on the top right to complete the set
+                        up
+                      </li>
+                      <li className="text-sm text-base@md">You're done!</li>
+                    </ul>
+                  </div>
+                  <div className="text-center text-right@md">
+                    <button
+                      onClick={handleCopyToClipboard}
+                      className="margin-top-md btn btn--primary padding-y-xs margin-right-sm"
+                      id="highlightButton"
+                    >
+                      {copied ? "HTML Copied!" : "Copy to Clipboard"}
+                    </button>
+                    <Fade top cascade>
+                      <button
+                        className="margin-top-md btn btn--primary padding-y-xs"
+                        onClick={handleGoBack}
+                      >
+                        Back
+                      </button>
+                    </Fade>
+                  </div>
+                </div>
+
+                <div className="col-12 col@md hide block@md">
                   <div
                     className="padding-lg padding-bottom-0 height-100%"
                     style={{
@@ -317,7 +376,7 @@ function EmailSignatureForm() {
                       color: "#003865",
                     }}
                   >
-                    <h2 className="text-md font-secondary margin-bottom-md">
+                    <h2 className="text-md font-secondary margin-bottom-sm">
                       Instructions:
                     </h2>
                     <ul className="font-primary instructions">
@@ -325,7 +384,14 @@ function EmailSignatureForm() {
                         Click Copy to Clipboard
                       </li>
                       <li className="text-sm text-base@md">
-                        Outlook &gt; Settings &gt; Signatures &gt; Edit
+                        Open a new email message
+                      </li>
+                      <li className="text-sm text-base@md">
+                        On the Message menu, select Signature &gt; Signatures
+                      </li>
+                      <li className="text-sm text-base@md">
+                        Under Select signature to edit, choose New, and in the
+                        New Signature dialog box, type a name for the signature
                       </li>
                       <li className="text-sm text-base@md">
                         Delete all the content and paste your email signature
@@ -338,6 +404,10 @@ function EmailSignatureForm() {
                       <li className="text-sm text-base@md">
                         Under “Choose Default Signature” Select your email
                         signature for “New Messages” and “Replies/Forward”
+                      </li>
+                      <li className="text-sm text-base@md">
+                        Click OK to save your new signature and return to your
+                        message.
                       </li>
                       <li className="text-sm text-base@md">You're done!</li>
                     </ul>

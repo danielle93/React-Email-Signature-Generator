@@ -178,7 +178,7 @@ a {
 }
 
 .generatedSignature {
-  transform: scale(0.7);
+  transform: scale(0.5);
 
   @include breakpoint(md) {
     transform: scale(1);
