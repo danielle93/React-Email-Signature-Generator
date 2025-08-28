@@ -1,4 +1,4 @@
-# Email Signature Generator for Agency Habitat
+# React Email Signature Generator
 
 ### `nvm use 16`
 
