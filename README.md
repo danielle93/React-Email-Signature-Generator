@@ -16,7 +16,7 @@ Start development server
 
 Create production build
 
-## Adding New Employee Headshots & Cu
+## Adding New Employee Headshots
 
 Sign in to Airtable.com<br>
 Go to `https://airtable.com/appY8CxyBarWLloUl`<br>
